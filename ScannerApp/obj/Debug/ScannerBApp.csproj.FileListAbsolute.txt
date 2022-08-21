@@ -1,0 +1,10 @@
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\bin\Debug\ScannerBApp.exe.config
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\bin\Debug\ScannerBApp.exe
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\bin\Debug\ScannerBApp.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\bin\Debug\ScannerBControls.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\obj\Debug\ScannerBApp.csproj.AssemblyReference.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\obj\Debug\ScannerBApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\obj\Debug\ScannerBApp.csproj.CoreCompileInputs.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\obj\Debug\ScannerBApp.csproj.CopyComplete
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\obj\Debug\ScannerBApp.exe
+C:\Users\D78650\Desktop\src\practicas\ScannerBApp\ScannerBApp\obj\Debug\ScannerBApp.pdb

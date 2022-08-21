@@ -1,0 +1,12 @@
+C:\Users\D78650\Desktop\src\practicas\ScannerBControls\ScannerBControls\bin\Debug\ScannerBControls.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerBControls\ScannerBControls\bin\Debug\ScannerBControls.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.csproj.AssemblyReference.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.csproj.CoreCompileInputs.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerBControls\ScannerBControls\bin\Debug\ScannerBControls.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerBControls\ScannerBControls\bin\Debug\ScannerBControls.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.csproj.AssemblyReference.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.csproj.CoreCompileInputs.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerBControls\ScannerBControls\obj\Debug\ScannerBControls.pdb
