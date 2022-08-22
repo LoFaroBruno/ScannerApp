@@ -50,7 +50,7 @@ namespace ScannerBControls
             }
             catch(Exception e)
             {
-                throw new Exception("Scan failure. ",e);
+                throw new Exception("Scan failure.",e);
             }
             return data;
         }

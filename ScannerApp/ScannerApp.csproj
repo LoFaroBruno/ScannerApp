@@ -59,13 +59,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="models\WrapperScannerA.cs" />
+    <Compile Include="models\WrapperScannerB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScannerAapp.cs" />
-    <Compile Include="ScannerBapp.cs" />
     <Compile Include="ScannerTest.cs" />
-    <Compile Include="WrapperScannerA.cs" />
-    <Compile Include="WrapperScannerB.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

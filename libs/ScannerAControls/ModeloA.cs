@@ -48,15 +48,8 @@ namespace ScannerAControls
         private string SaveImage(Utils.Utils.ImageFormat format, Utils.Utils.ImageResolution resolution, string CMC7)
         {
             string destinationFile = DestinationDirectory + '\\' + CMC7 + '.' + format.ToString();
-            try
-            {
-                string sourceFile = getRandomImageName(resolution);
-                File.Copy(sourceFile, destinationFile, true);
-            }
-            catch (IOException iox)
-            {
-                Console.WriteLine(iox.Message);
-            }
+            string sourceFile = getRandomImageName(resolution);
+            File.Copy(sourceFile, destinationFile, true);
             return destinationFile;
         }
 
@@ -75,11 +68,15 @@ namespace ScannerAControls
                     break;
             }
             Random rand = new Random();
+            string[] files;
             try
             {
-                string[] files = Directory.GetFiles(ImagesDir, "*.jpg");
+                files = Directory.GetFiles(ImagesDir, "*.jpg");
             }
-
+            catch(Exception ex)
+            {
+                throw new Exception("",ex);
+            }
             return files[rand.Next(files.Length)];
         }
 
