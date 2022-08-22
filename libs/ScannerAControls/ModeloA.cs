@@ -75,7 +75,11 @@ namespace ScannerAControls
                     break;
             }
             Random rand = new Random();
-            string[] files = Directory.GetFiles(ImagesDir, "*.jpg");
+            try
+            {
+                string[] files = Directory.GetFiles(ImagesDir, "*.jpg");
+            }
+
             return files[rand.Next(files.Length)];
         }
 

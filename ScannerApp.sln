@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerAControls", "ScannerAControls\ScannerAControls.csproj", "{E9DF08CF-7A9A-4E60-A70F-75918D16D188}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218} = {0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerApp", "ScannerApp\ScannerApp.csproj", "{B24E03B5-F6DC-437C-9308-6B1D1250D278}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218} = {0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}
@@ -16,14 +11,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerApp", "ScannerApp\Sc
 		{E9DF08CF-7A9A-4E60-A70F-75918D16D188} = {E9DF08CF-7A9A-4E60-A70F-75918D16D188}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iscanner", "Iscanner\Iscanner.csproj", "{B6B76578-D38E-47B2-AB79-A1C608C90E63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "libs\Utils\Utils.csproj", "{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iscanner", "libs\Iscanner\Iscanner.csproj", "{B6B76578-D38E-47B2-AB79-A1C608C90E63}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218} = {0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerAControls", "libs\ScannerAControls\ScannerAControls.csproj", "{E9DF08CF-7A9A-4E60-A70F-75918D16D188}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218} = {0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerBControls", "ScannerBControls\ScannerBControls.csproj", "{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerBControls", "libs\ScannerBControls\ScannerBControls.csproj", "{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218} = {0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}
 	EndProjectSection
@@ -34,22 +34,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B24E03B5-F6DC-437C-9308-6B1D1250D278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B24E03B5-F6DC-437C-9308-6B1D1250D278}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B24E03B5-F6DC-437C-9308-6B1D1250D278}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B24E03B5-F6DC-437C-9308-6B1D1250D278}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DF08CF-7A9A-4E60-A70F-75918D16D188}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU

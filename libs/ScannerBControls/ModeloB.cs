@@ -44,7 +44,14 @@ namespace ScannerBControls
             byte[] data = ImageToByteArray(GetRandomImage());
             System.Drawing.Image newImage = Image.FromStream(new MemoryStream(data));
             string destinationFile = DestinationDirectory + '\\' + CMC7 + ".png";
-            newImage.Save(destinationFile, ImageFormat.Png);
+            try
+            {
+                newImage.Save(destinationFile, ImageFormat.Png);
+            }
+            catch(Exception e)
+            {
+                throw new Exception("Scan failure. ",e);
+            }
             return data;
         }
 
