@@ -1,0 +1,9 @@
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\obj\Debug\Iscanner.csproj.AssemblyReference.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\obj\Debug\Iscanner.csproj.CoreCompileInputs.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\bin\Debug\Iscanner.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\bin\Debug\Iscanner.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\bin\Debug\Utils.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\bin\Debug\Utils.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\obj\Debug\Iscanner.csproj.CopyComplete
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\obj\Debug\Iscanner.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Iscanner\obj\Debug\Iscanner.pdb

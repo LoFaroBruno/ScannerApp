@@ -15,10 +15,21 @@ namespace ScannerApp
                 switch (option)
                 {
                     case 1:
-                        ScannerAapp.TestScannerA();
+                        ScannerAControls.ModeloA modeloA = new ScannerAControls.ModeloA();
+                        WrapperScannerA scannerA = new WrapperScannerA(modeloA)
+                        {
+                            Resolucion = Utils.Utils.ImageResolution.DPI_200,
+                            DirDestino = @"C:\Users\D78650\Desktop\scans",
+                        };
+                        ScannerTest.Test(scannerA);
                         break;
                     case 2:
-                        ScannerBapp.TestScannerB();
+                        /*WrapperScannerB scannerB = new WrapperScannerA
+                        {
+                            Resolucion = Utils.Utils.ImageResolution.DPI_200,
+                            DirDestino = @"C:\Users\D78650\Desktop\scans"
+                        };
+                        ScannerTest.Test(scannerB);*/
                         break;
                     default:
                         Console.WriteLine("Invalid Option");

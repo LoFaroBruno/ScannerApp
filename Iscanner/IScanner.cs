@@ -1,11 +1,12 @@
-﻿namespace IScanner
+﻿namespace Iscanner
 {
-    interface IScanner
+    public interface IScanner
     {
         void Digitalizar();
         void Detener();
         bool Test();
-        Iscanner.Utils.Resolution Resolucion { get; set; }
+        void Init();
+        Utils.Utils.ImageResolution Resolucion { get; set; }
         string DirDestino { get; set; }
     }
 }

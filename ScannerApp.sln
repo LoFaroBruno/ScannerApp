@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerApp", "ScannerApp\Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerBControls", "ScannerBControls\ScannerBControls\ScannerBControls.csproj", "{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iscanner", "Iscanner\Iscanner.csproj", "{B6B76578-D38E-47B2-AB79-A1C608C90E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B76578-D38E-47B2-AB79-A1C608C90E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2FEDD2-A09E-4888-8DF6-3DD5459AB218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

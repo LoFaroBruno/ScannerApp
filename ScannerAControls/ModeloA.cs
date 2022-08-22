@@ -1,30 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ScannerAControls
 {
     public class ModeloA
     {
-        public enum ImageFormat { JPG, PNG }
-        public enum ImageResolution { DPI_200, DPI_300 }
+        public Utils.Utils.ImageFormat imageFormat;
+        public Utils.Utils.ImageResolution imageResolution;
         public string DestinationDirectory { get; set; } = "./";
         public string OriginDirectory { get; set; } = @"..\..\images\Img_Cheques";
-        public readonly string statusOk = "General Status OK \n Connection: OK \n Port check: OK " +
-                                            "\n Firmware version: 1.83 \n *Serial Nmbr: 12345.6789";
-        public readonly string statusError = "General Status ERROR \n Connection: OK \n Port check: FAIL " +
-                                                "\n Firmware version: 1.83 \n *Serial Nmbr: 12345.6789";
+        public bool status;
+        string statusOk = "General Status OK \n Connection: OK \n Port check: OK " +
+                        "\n Firmware version: 1.83 \n *Serial Nmbr: 12345.6789";
+        string statusError = "General Status ERROR \n Connection: OK \n Port check: FAIL " +
+                                "\n Firmware version: 1.83 \n *Serial Nmbr: 12345.6789";
 
-        public string Scan(ImageFormat format, ImageResolution resolution = ImageResolution.DPI_300)
+        public string Scan(Utils.Utils.ImageFormat format, Utils.Utils.ImageResolution resolution = Utils.Utils.ImageResolution.DPI_300)
         {
             string CMC7 = generateCMC7();
             return SaveImage(format, resolution, CMC7);
         }
 
-        public string[] MultiScan(int quantity, ImageFormat format, ImageResolution resolution = ImageResolution.DPI_300)
+        public string[] MultiScan(int quantity, Utils.Utils.ImageFormat format, Utils.Utils.ImageResolution resolution = Utils.Utils.ImageResolution.DPI_300)
         {
             if (quantity <= 0)
                 throw new FormatException("Invalid quantity parameter.");
@@ -47,7 +45,7 @@ namespace ScannerAControls
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
-        private string SaveImage(ImageFormat format, ImageResolution resolution, string CMC7)
+        private string SaveImage(Utils.Utils.ImageFormat format, Utils.Utils.ImageResolution resolution, string CMC7)
         {
             string destinationFile = DestinationDirectory + '\\' + CMC7 + '.' + format.ToString();
             try
@@ -62,15 +60,15 @@ namespace ScannerAControls
             return destinationFile;
         }
 
-        private string getRandomImageName(ImageResolution resolution)
+        private string getRandomImageName(Utils.Utils.ImageResolution resolution)
         {
             string ImagesDir = OriginDirectory;
             switch (resolution)
             {
-                case ImageResolution.DPI_200:
+                case Utils.Utils.ImageResolution.DPI_200:
                     ImagesDir += @"\200_DPI\";
                     break;
-                case ImageResolution.DPI_300:
+                case Utils.Utils.ImageResolution.DPI_300:
                     ImagesDir += @"\300_DPI\";
                     break;
                 default:
@@ -85,8 +83,19 @@ namespace ScannerAControls
         {
             int statusNumber = new Random().Next(0, 2);
             if (statusNumber == 1)
+            {
+                status = false;
                 return statusError;
+            }
+            status = true;
             return statusOk;
+        }
+
+        public void Init()
+        {
+            Console.WriteLine("Initializing scanner.");
+            Console.WriteLine(statusOk);
+            status = true;
         }
     }
 }

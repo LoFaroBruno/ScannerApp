@@ -1,6 +1,9 @@
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\bin\Debug\ScannerAControls.dll
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\bin\Debug\ScannerAControls.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\bin\Debug\Utils.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\bin\Debug\Utils.pdb
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\obj\Debug\ScannerAControls.csproj.AssemblyReference.cache
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\obj\Debug\ScannerAControls.csproj.CoreCompileInputs.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\obj\Debug\ScannerAControls.csproj.CopyComplete
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\obj\Debug\ScannerAControls.dll
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerAControls\obj\Debug\ScannerAControls.pdb

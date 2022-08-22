@@ -1,0 +1,6 @@
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Utils\bin\Debug\Utils.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Utils\bin\Debug\Utils.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Utils\obj\Debug\Utils.csproj.AssemblyReference.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Utils\obj\Debug\Utils.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\Utils\obj\Debug\Utils.pdb

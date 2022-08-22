@@ -8,7 +8,7 @@ namespace ScannerBControls
     public class ModeloB
     {
         private bool IsActive = false;
-        private enum ImageResolution { DPI_200, DPI_300 }
+        public Utils.Utils.ImageResolution Resolution;
         public string OriginDirectory { get; set; } = @"..\..\images\Img_Cheques\300_DPI\";
 
         public void Initialize()
