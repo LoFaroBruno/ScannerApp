@@ -35,15 +35,12 @@
   <ItemGroup>
     <Reference Include="Iscanner">
       <HintPath>..\Iscanner\bin\Debug\Iscanner.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ScannerAControls">
       <HintPath>..\ScannerAControls\bin\Debug\ScannerAControls.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ScannerBControls">
-      <HintPath>..\ScannerBControls\ScannerBControls\bin\Debug\ScannerBControls.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\ScannerBControls\bin\Debug\ScannerBControls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,7 +53,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="Utils">
       <HintPath>..\Utils\bin\Debug\Utils.dll</HintPath>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

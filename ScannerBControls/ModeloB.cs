@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Drawing.Imaging;
 
 namespace ScannerBControls
 {
@@ -9,8 +10,8 @@ namespace ScannerBControls
     {
         private bool IsActive = false;
         public Utils.Utils.ImageResolution imageResolution;
+        public string DestinationDirectory { get; set; } = @"C:\Users\D78650\Documents\Scans";
         public string OriginDirectory { get; set; } = @"..\..\images\Img_Cheques\300_DPI\";
-        public string DestinationDirectory { get; set; } = @"./";
         public void Initialize()
         {
             IsActive = true;
@@ -40,7 +41,11 @@ namespace ScannerBControls
             if (!this.IsActive)
                 throw new Exception("ScannerNotInit");
             CMC7 = GenerateCMC7();
-            return ImageToByteArray(GetRandomImage());
+            byte[] data = ImageToByteArray(GetRandomImage());
+            System.Drawing.Image newImage = Image.FromStream(new MemoryStream(data));
+            string destinationFile = DestinationDirectory + '\\' + CMC7 + ".png";
+            newImage.Save(destinationFile, ImageFormat.Png);
+            return data;
         }
 
         private string GenerateCMC7()

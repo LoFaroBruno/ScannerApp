@@ -16,11 +16,9 @@ namespace ScannerApp
         }
         void IScanner.Digitalizar()
         {
-            string CMC7 = null;
+            string CMC7;
+            Scanner.Scan(out CMC7);
             Console.WriteLine($"CMC7: {CMC7}");
-            byte[] data = Scanner.Scan(out CMC7);
-            System.Drawing.Image newImage = Image.FromStream(new MemoryStream(data));
-            newImage.Save(DirDestino, ImageFormat.Png);
         }
         void IScanner.Detener()
         {

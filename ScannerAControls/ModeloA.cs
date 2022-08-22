@@ -8,7 +8,7 @@ namespace ScannerAControls
     {
         public Utils.Utils.ImageFormat imageFormat;
         public Utils.Utils.ImageResolution imageResolution;
-        public string DestinationDirectory { get; set; } = "./";
+        public string DestinationDirectory { get; set; } = @"C:\Users\D78650\Documents\Scans";
         public string OriginDirectory { get; set; } = @"..\..\images\Img_Cheques";
         public bool status;
         string statusOk = "General Status OK \n Connection: OK \n Port check: OK " +
