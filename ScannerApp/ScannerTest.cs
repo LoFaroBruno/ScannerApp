@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace ScannerApp
 {
     static class ScannerTest

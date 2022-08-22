@@ -8,9 +8,9 @@ namespace ScannerBControls
     public class ModeloB
     {
         private bool IsActive = false;
-        public Utils.Utils.ImageResolution Resolution;
+        public Utils.Utils.ImageResolution imageResolution;
         public string OriginDirectory { get; set; } = @"..\..\images\Img_Cheques\300_DPI\";
-
+        public string DestinationDirectory { get; set; } = @"./";
         public void Initialize()
         {
             IsActive = true;
@@ -19,9 +19,14 @@ namespace ScannerBControls
 
         public bool TestScan()
         {
-            if (!IsActive)
-                return false;
-            return true;
+            int statusNumber = new Random().Next(0, 2);
+            if (statusNumber == 1)
+            {
+                IsActive = false;
+                return IsActive;
+            }
+            IsActive = true;
+            return IsActive;
         }
 
         public void Close()

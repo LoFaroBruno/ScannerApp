@@ -24,12 +24,13 @@ namespace ScannerApp
                         ScannerTest.Test(scannerA);
                         break;
                     case 2:
-                        /*WrapperScannerB scannerB = new WrapperScannerA
+                        ScannerBControls.ModeloB modeloB = new ScannerBControls.ModeloB();
+                        WrapperScannerB scannerB = new WrapperScannerB(modeloB)
                         {
                             Resolucion = Utils.Utils.ImageResolution.DPI_200,
-                            DirDestino = @"C:\Users\D78650\Desktop\scans"
+                            DirDestino = @"C:\Users\D78650\Desktop\scans",
                         };
-                        ScannerTest.Test(scannerB);*/
+                        ScannerTest.Test(scannerB);
                         break;
                     default:
                         Console.WriteLine("Invalid Option");

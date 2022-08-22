@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="Utils">
       <HintPath>..\..\Utils\bin\Debug\Utils.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

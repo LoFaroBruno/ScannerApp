@@ -1,32 +1,38 @@
-﻿using ScannerAControls;
-using System;
+﻿using System;
+using ScannerBControls;
 using Iscanner;
+using System.Drawing;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace ScannerApp
 {
-    public class WrapperScannerA : IScanner
+    internal class WrapperScannerB : IScanner
     {
-        private ModeloA Scanner;
-        public WrapperScannerA(ModeloA scanner)
+        private ModeloB Scanner;
+        public WrapperScannerB(ModeloB scanner)
         {
             Scanner = scanner;
         }
         void IScanner.Digitalizar()
         {
-            Console.WriteLine(Scanner.Scan(Utils.Utils.ImageFormat.JPG, Utils.Utils.ImageResolution.DPI_300));
+            string CMC7 = null;
+            Console.WriteLine($"CMC7: {CMC7}");
+            byte[] data = Scanner.Scan(out CMC7);
+            System.Drawing.Image newImage = Image.FromStream(new MemoryStream(data));
+            newImage.Save(DirDestino, ImageFormat.Png);
         }
         void IScanner.Detener()
         {
-            Scanner.Stop();
+            Scanner.Close();
         }
         bool IScanner.Test()
         {
-            Console.WriteLine(Scanner.GetStatus());
-            return Scanner.status;
+            return Scanner.TestScan();
         }
         void IScanner.Init()
         {
-            Scanner.Init();
+            Scanner.Initialize();
         }
         public Utils.Utils.ImageResolution Resolucion
         {
