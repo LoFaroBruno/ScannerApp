@@ -1,10 +1,13 @@
-C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerApp.csproj.AssemblyReference.cache
-C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerApp.csproj.SuggestedBindingRedirects.cache
-C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerApp.csproj.CoreCompileInputs.cache
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\bin\Debug\ScannerBApp.exe.config
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\bin\Debug\ScannerBApp.exe
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\bin\Debug\ScannerBApp.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\bin\Debug\ScannerAControls.dll
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\bin\Debug\ScannerBControls.dll
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\bin\Debug\ScannerAControls.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\bin\Debug\ScannerBControls.pdb
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerApp.csproj.AssemblyReference.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerApp.csproj.CoreCompileInputs.cache
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerApp.csproj.CopyComplete
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerBApp.exe
 C:\Users\D78650\Desktop\src\practicas\ScannerApp\ScannerApp\obj\Debug\ScannerBApp.pdb
