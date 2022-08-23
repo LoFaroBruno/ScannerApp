@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerAControls", "Scanner
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerApp", "ScannerApp\ScannerApp.csproj", "{B24E03B5-F6DC-437C-9308-6B1D1250D278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerBControls", "ScannerBControls\ScannerBControls\ScannerBControls.csproj", "{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerBControls", "ScannerBControls\ScannerBControls.csproj", "{BCC22721-CD65-4A67-814E-4EDA60F3EE2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
