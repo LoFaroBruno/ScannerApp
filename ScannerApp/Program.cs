@@ -39,7 +39,7 @@ namespace ScannerApp
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine($"{e.StackTrace}{e?.InnerException}");
             }
             Console.ReadKey();
         }

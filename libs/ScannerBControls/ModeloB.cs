@@ -40,19 +40,17 @@ namespace ScannerBControls
         {
             if (!this.IsActive)
                 throw new Exception("ScannerNotInit");
-            CMC7 = GenerateCMC7();
-            byte[] data = ImageToByteArray(GetRandomImage());
-            System.Drawing.Image newImage = Image.FromStream(new MemoryStream(data));
-            string destinationFile = DestinationDirectory + '\\' + CMC7 + ".png";
+            byte[] imageArray;
             try
             {
-                newImage.Save(destinationFile, ImageFormat.Png);
+                CMC7 = GenerateCMC7();
+                imageArray = ImageToByteArray(GetRandomImage());
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                throw new Exception("Scan failure.",e);
+                throw new Exception("Failed scan", e);
             }
-            return data;
+            return imageArray;
         }
 
         private string GenerateCMC7()

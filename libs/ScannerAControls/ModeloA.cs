@@ -19,7 +19,16 @@ namespace ScannerAControls
         public string Scan(Utils.Utils.ImageFormat format, Utils.Utils.ImageResolution resolution = Utils.Utils.ImageResolution.DPI_300)
         {
             string CMC7 = generateCMC7();
-            return SaveImage(format, resolution, CMC7);
+            string file;
+            try
+            {
+                file = SaveImage(format, resolution, CMC7);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Failed scan", e);
+            }
+            return file;
         }
 
         public string[] MultiScan(int quantity, Utils.Utils.ImageFormat format, Utils.Utils.ImageResolution resolution = Utils.Utils.ImageResolution.DPI_300)
@@ -27,8 +36,15 @@ namespace ScannerAControls
             if (quantity <= 0)
                 throw new FormatException("Invalid quantity parameter.");
             string[] savedImages = new string[quantity];
-            for (int i = 0; i < quantity; i++)
-                savedImages[i] = SaveImage(format, resolution, generateCMC7());
+            try
+            {
+                for (int i = 0; i < quantity; i++)
+                    savedImages[i] = SaveImage(format, resolution, generateCMC7());
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Failed scan", e);
+            }
             return savedImages;
         }
 
@@ -69,14 +85,7 @@ namespace ScannerAControls
             }
             Random rand = new Random();
             string[] files;
-            try
-            {
-                files = Directory.GetFiles(ImagesDir, "*.jpg");
-            }
-            catch(Exception ex)
-            {
-                throw new Exception("",ex);
-            }
+            files = Directory.GetFiles(ImagesDir, "*.jpg");
             return files[rand.Next(files.Length)];
         }
 
